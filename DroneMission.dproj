@@ -3,7 +3,7 @@
         <ProjectGuid>{5251178A-EF9C-4602-B299-8EC87F9D6E6D}</ProjectGuid>
         <MainSource>DroneMission.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <TargetedPlatforms>3</TargetedPlatforms>
         <AppType>Console</AppType>
         <FrameworkType>None</FrameworkType>
@@ -76,11 +76,11 @@
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=zed &lt;starmen@tut.by&gt;;FileDescription=$(MSBuildProjectName);FileVersion=2019.11.9.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;ProgramID=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=zed &lt;starmen@tut.by&gt;;FileDescription=$(MSBuildProjectName);FileVersion=2019.11.11.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;ProgramID=</VerInfo_Keys>
         <Manifest_File>(None)</Manifest_File>
         <VerInfo_MajorVer>2019</VerInfo_MajorVer>
         <VerInfo_MinorVer>11</VerInfo_MinorVer>
-        <VerInfo_Release>9</VerInfo_Release>
+        <VerInfo_Release>11</VerInfo_Release>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>

@@ -84,7 +84,7 @@ begin
     VCoord := Format('%s,%s,0', [ARoute[I].Lon, ARoute[I].Lat]);
     WriteText(
       CTAB + CTAB + '<Placemark>' + CRLF +
-      CTAB + CTAB + '<name>' + Format('Point %d.%d', [ARouteId, I+1]) + '</name>' + CRLF +
+      CTAB + CTAB + '<name>' + Format('Point %d', [I+1]) + '</name>' + CRLF +
       CTAB + CTAB + '<Point>' + CRLF +
       CTAB + CTAB + CTAB + '<coordinates>' + VCoord + '</coordinates>' + CRLF +
       CTAB + CTAB + '</Point>' + CRLF +

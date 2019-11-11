@@ -137,7 +137,7 @@ class procedure TDroneMission.ProcessFile(
     for I := 0 to Length(AMission) - 1 do begin
       Inc(J, Length(AMission[I]));
     end;
-    OnLogEvent('Routs:  ' + IntToStr(Length(AMission)));
+    //OnLogEvent('Routs:  ' + IntToStr(Length(AMission)));
     OnLogEvent('Points: ' + IntToStr(J));
   end;
 

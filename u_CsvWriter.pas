@@ -25,7 +25,7 @@ procedure TCsvWriter.DoWrite(const AMission: TMission);
 var
   I: Integer;
 begin
-  WriteText('Route,Point,Lat,Lon');
+  WriteText('Point,Lat,Lon');
   for I := 0 to Length(AMission) - 1 do begin
     WriteRoute(AMission[I], I+1);
   end;
@@ -40,7 +40,7 @@ var
 begin
   for I := 0 to Length(ARoute) - 1 do begin
     WriteText(
-      Format('%d,%d,%s,%s', [ARouteId, I+1, ARoute[I].Lat, ARoute[I].Lon])
+      Format('%d,%s,%s', [I+1, ARoute[I].Lat, ARoute[I].Lon])
     );
   end;
 end;

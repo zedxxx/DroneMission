@@ -65,7 +65,6 @@ var
   VRoute: IXMLNode;
   VPoint: IXMLNode;
 begin
-  K := 0;
   Result := nil;
 
   VDocument := TXMLDocument.Create(nil);
@@ -86,8 +85,10 @@ begin
     Exit;
   end;
 
+  K := 0;
+  SetLength(Result, 1);
+
   for I := 0 to VMission.ChildNodes.Count - 1 do begin
-    SetLength(Result, K+1);
     VRoute := VMission.ChildNodes.Get(I);
     for J := 0 to VRoute.ChildNodes.Count - 1 do begin
       VPoint := VRoute.ChildNodes.Get(J);
@@ -99,11 +100,11 @@ begin
         end;
       end;
     end;
-    if Length(Result[K]) > 0 then begin
-      Inc(K);
-    end;
   end;
 
+  if Length(Result[K]) > 0 then begin
+    Inc(K);
+  end;
   SetLength(Result, K);
 end;
 
